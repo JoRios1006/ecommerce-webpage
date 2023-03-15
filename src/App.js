@@ -342,7 +342,7 @@ function App() {
             </div>
           </nav>
           <p className="mt-8 text-center text-base text-gray-400">
-            © 2023 Acme Corp. All rights reserved.
+            © 2023 JOSE AGUSTIN RIOS. All rights reserved.
           </p>
         </div>
       </footer>
