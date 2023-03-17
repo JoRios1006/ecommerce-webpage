@@ -6,6 +6,7 @@ import "tailwindcss/tailwind.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { DevicePhoneMobileIcon, FireIcon, MagnifyingGlassIcon, TvIcon , ComputerDesktopIcon} from "@heroicons/react/24/solid";
 
 const Image = ({ src, alt }) => {
   return (
@@ -36,21 +37,21 @@ const Carousel = () => {
   );
 };
 
+// Cocción  Refrigeración  Equipamiento Comercial  Hogar  Panadería  ¡Sumate a nuestro Equipo! 
 
 const tabs = [
-  ["Tab 1", "Tab 1 content"],
-  ["Tab 2", "Tab 2 content"],
-  ["Tab 3", "Tab 3 content"],
-  ["Tab 4", "Tab 4 content"],
-  ["Tab 5", "Tab 5 content"],
-  ["Tab 6", "Tab 6 content"],
-];
+  ["Cocción", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl."],
+  ["Refrigeración", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl."],
+  ["Equipamiento Comercial", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl."],
+  ["Hogar", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl."],
+  ["Panadería", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl. Sed euismod, nunc vitae lacinia lacinia, nunc nisl aliquam nunc, vitae ultricies nisl nunc vel nisl."],
+  ];
 
 const TabMenu = () => {
   const [activeTab, setActiveTab] = useState(null);
   return (
     <div className="px-20 flex justify-center">
-      <div className="relative flex justify-around w-full">
+      <div className="relative flex w-full">
         {tabs.map(([title, content], id) => (
           <div
             key={id}
@@ -58,9 +59,7 @@ const TabMenu = () => {
             onMouseEnter={() => setActiveTab(id)}
             onMouseLeave={() => setActiveTab(null)}
           >
-            <button className="text-white py-2 px-4">
-              {title}
-            </button>
+            <button className="text-white py-2 px-4">{title}</button>
             <Transition
               show={activeTab === id}
               enter="transition-opacity duration-75"
@@ -83,48 +82,21 @@ const TabMenu = () => {
 
 const ContactInfo = () => {
   return (
-    <div className="bg-gray-100 py-2 px-4 flex justify-between items-center border-b border-gray-300">
-      <div className="flex items-center space-x-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-gray-500"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fillRule="evenodd"
-            d="M2 4a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2-2a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V3a1 1 0 00-1-1H4z"
-            clipRule="evenodd"
-          />
-          <path
-            fillRule="evenodd"
-            d="M10 12a2 2 0 100-4 2 2 0 000 4zM8 8a4 4 0 118 0 4 4 0 01-8 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-        <div>
-          <p className="text-sm font-medium text-gray-500">
-            Contact Us: support@example.com
-          </p>
-          <p className="text-xs text-gray-400">
-            Mon - Fri: 8AM - 5PM, Sat - Sun: 9AM - 3PM
-          </p>
-        </div>
+    <div className="bg-red-700 flex border-b border-red-300 justify-end">
+      <div className="flex items-center ">
+        <p className="text-white text-sm font-bold p-2">Contacto</p>
+        <p className="text-white text-sm p-2">+54 0376 442-1154</p>
+        <hr className="border-white border mx-2 py-2" />
+        <p className="text-white text-sm font-bold p-2">Mail</p>
+        <p className="text-white text-sm p-2">
+          <a
+            href="mailto:credimision1@gmail.com"
+            className="text-white text-sm p-2"
+          >
+            credimision1@gmail.com
+          </a>
+        </p>
       </div>
-      <button className="text-gray-500 hover:text-gray-700">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5 5a1 1 0 011-1h3.586a1 1 0 01.707.293l6.414 6.414a1 1 0 010 1.414l-6.414 6.414a1 1 0 01-.707.293H6a1 1 0 01-1-1V5zm2 0v8.586L13.586 5H7z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
     </div>
   );
 };
@@ -136,22 +108,16 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-full mx-3">
       <input
         type="text"
         placeholder="Hola! Que estás buscando?"
-        className="bg-gray-800 text-white rounded-full py-2 px-4 pl-10 w-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white focus:text-gray-900"
+        className="bg-white text-black rounded py-2 px-4 pl-2 w-full transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white focus:text-gray-900"
         value={searchTerm}
         onChange={handleSearchChange}
       />
-      <div className="absolute inset-y-0 left-0 flex items-center pl-3">
-        <svg
-          className="h-6 w-6 fill-current text-gray-500"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.5 3C6.5 3 4 5.5 4 8.5C4 11.5 6.5 14 9.5 14C10.7 14 11.8 13.6 12.8 12.9L15.3 15.4C15.7 15.8 16.3 16 16.9 16C18.7 16 20 14.7 20 12.9C20 11.1 18.7 9.8 16.9 9.8C16.3 9.8 15.8 10 15.4 10L12.9 7.5C13.6 6.5 14 5.4 14 4.2C14 1.9 12.1 0 9.8 0C7.5 0 5.6 1.9 5.6 4.2C5.6 5.4 6 6.5 6.7 7.5L4.2 10C3.6 9.4 3 8.6 3 7.8C3 5.3 5.3 3 7.8 3C8.6 3 9.4 3.4 10 4L9.5 3ZM9.5 12.2C7.2 12.2 5.3 10.3 5.3 8C5.3 5.7 7.2 3.8 9.5 3.8C11.8 3.8 13.7 5.7 13.7 8C13.7 10.3 11.8 12.2 9.5 12.2Z" />
-        </svg>
+      <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+        <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
       </div>
     </div>
   );
@@ -174,20 +140,17 @@ const StyledLink = (style) => (props) => {
 };
 
 const Navbar = () => {
-  const linkStyle = "text-gray-300 hover:text-white";
+  const linkStyle = "text-gray-100 hover:text-white";
   const SimpleLink = StyledLink(linkStyle);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-gray-900 py-3">
+    <nav className="bg-red-600 py-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="flex items-center bg-gray-100 p-2 rounded-md">
-            <img
-              className="h-8 w-auto mr-2"
-              src="https://www.svgrepo.com/show/463682/store.svg"
-              alt="Logo"
-            />
-            <span className="text-black font-bold text-xl">Mi Tienda</span>
+          <div className="bg-black px-4 flex justify-center -skew-x-12 ">
+            <span className="text-white text-center text-5xl font-black">
+              CREDIMISION
+            </span>
           </div>
           <SearchBar />
           <div className="hidden md:block">
@@ -238,10 +201,10 @@ const Navbar = () => {
 };
 const HeroSection = () => {
   const linkStyle =
-    "inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700";
+    "inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-800 hover:bg-red-700";
   const SimpleLink = StyledLink(linkStyle);
   return (
-    <div className="bg-gray-900">
+    <div className="bg-red-600">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl">
           Compra las últimas novedades
@@ -288,7 +251,7 @@ const ProductCard = ({
           <button
             type="button"
             onClick={() => setIsInCart(!isInCart)}
-            className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+            className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
           >
             {isInCart ? "Quitar del carrito" : "Agregar al carrito"}
           </button>
@@ -411,26 +374,53 @@ const ProductCarousel = () => {
 const ProductosSection = () => {
   return (
     <div className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
         <div className="lg:text-center">
           <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Los recién llegados
+          Ofertas Hasta 35% OFF!
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Mira nuestros últimos productos
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipiscing elit. Et, consequatur.
-          </p>
         </div>
         <ProductCarousel />
       </div>
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
+        <div className="lg:text-center">
+          <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
+          Ofertas Hasta 35% OFF!
+          </h2>
+        </div>
+        <ProductCarousel />
+      </div>
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
+        <div className="lg:text-center">
+          <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
+          Ofertas Hasta 35% OFF!
+          </h2>
+        </div>
+        <ProductCarousel />
+      </div>
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
+        <div className="lg:text-center">
+          <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
+          Ofertas Hasta 35% OFF!
+          </h2>
+        </div>
+        <ProductCarousel />
+      </div>
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
+        <div className="lg:text-center">
+          <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
+          Ofertas Hasta 35% OFF!
+          </h2>
+        </div>
+        <ProductCarousel />
+      </div>
+      
     </div>
   );
 };
 const NewsletterSection = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-red-50">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold text-gray-900">
@@ -456,7 +446,7 @@ const NewsletterSection = () => {
 
             <button
               type="submit"
-              className="mt-3 w-full px-5 py-3 border border-transparent shadow text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
+              className="mt-3 w-full px-5 py-3 border border-transparent shadow text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
             >
               Suscribase
             </button>
@@ -500,33 +490,37 @@ const FooterSection = () => {
   );
 };
 
-const LittleComponent = ({ icon, text }) => {
+const LittleComponent = ({icon, text}) => {
   return (
     <div className="text-center">
-      <div className="bg-gray-200 rounded-full p-4 inline-block">
-        <i className={`${icon} text-4xl`} />
+      <div className="bg-red-500 rounded-full p-6 inline-block mx-6">
+        {icon}
       </div>
-      <div className="text-gray-700 mt-2">{text}</div>
+      <div className="text-black uppercase text-xl mt-2">{text}</div>
     </div>
   );
 };
-
+// Televisores  Celulares  Calefacción  Lavado  Heladeras y freezers  Notebooks
 const CategorySection = () => {
+  const categories = [
+    [<TvIcon className="h-20 w-20 text-white"/>, "Televisores"],
+    [<DevicePhoneMobileIcon className="h-20 w-20 text-white"/>, "Celulares"],
+    [<FireIcon className="h-20 w-20 text-white"/>, "Calefacción"],
+    [<ComputerDesktopIcon className="h-20 w-20 text-white"/> , "Notebooks"],
+  ];
+
   return (
-    <div className="flex justify-center">
-      <LittleComponent icon="fas fa-user" text="User 1" />
-      <LittleComponent icon="fas fa-user" text="User 2" />
-      <LittleComponent icon="fas fa-user" text="User 3" />
-      <LittleComponent icon="fas fa-user" text="User 4" />
-      <LittleComponent icon="fas fa-user" text="User 5" />
-      <LittleComponent icon="fas fa-user" text="User 6" />
+    <div className="flex justify-around py-4">
+      {categories.map((category, index) => (
+        <LittleComponent key={index} icon={category[0]} text={category[1]} />
+      ))}
     </div>
   );
 };
 
 function App() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-red-100">
       {/* ContactInfo Section */}
       <ContactInfo />
 
