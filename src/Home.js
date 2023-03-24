@@ -7,6 +7,7 @@ import ProductosSection from "./ProductosSection"
 import NewsletterSection from "./NewsletterSection"
 import FooterSection from "./FooterSection"
 
+// eslint-disable-next-line functional/functional-parameters
 const Home = () => {
     return (
         <div className="bg-red-100">

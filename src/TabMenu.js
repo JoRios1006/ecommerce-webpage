@@ -1,7 +1,8 @@
+/* eslint-disable functional/functional-parameters */
 import React from "react"
 import { Transition } from "@headlessui/react"
 import { useState } from "react"
-import { tabs } from "./tabs"
+import tabs  from "./tabs"
 
 const TabMenu = () => {
     const [activeTab, setActiveTab] =

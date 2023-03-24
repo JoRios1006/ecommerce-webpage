@@ -39,6 +39,7 @@ const ProductCard = ({
                 <div className="mt-3">
                     <button
                         type="button"
+                        // eslint-disable-next-line functional/functional-parameters
                         onClick={() =>
                             setIsInCart(!isInCart)
                         }

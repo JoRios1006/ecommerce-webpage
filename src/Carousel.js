@@ -2,6 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 import Image from "./Image"
 
+// eslint-disable-next-line functional/functional-parameters
 const Carousel = () => {
     const settings = {
         dots: true,

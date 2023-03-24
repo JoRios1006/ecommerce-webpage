@@ -1,5 +1,6 @@
 import React from "react"
 
+// eslint-disable-next-line functional/functional-parameters
 const ContactInfo = () => {
     return (
         <div className="bg-red-700 flex border-b border-red-300 justify-end">

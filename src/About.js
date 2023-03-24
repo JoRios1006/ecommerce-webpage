@@ -1,5 +1,6 @@
 import React from "react"
 
+// eslint-disable-next-line functional/functional-parameters
 const About = () => {
     return (
         <div className="flex flex-col items-center justify-center">

@@ -1,8 +1,9 @@
 import React from "react"
 import Slider from "react-slick"
 import ProductCard from "./ProductCard"
-import products from "./products"
+import products from "./data"
 
+// eslint-disable-next-line functional/functional-parameters
 const ProductCarousel = () => {
     const config = {
         dots: true,

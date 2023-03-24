@@ -7,9 +7,10 @@ import {
     ShoppingCartIcon,
     XMarkIcon,
 } from "@heroicons/react/24/solid"
-import { InCartProductCard } from "./InCartProductCard"
-import { products } from "./data"
+import InCartProductCard  from "./InCartProductCard"
+import  products  from "./data"
 
+// eslint-disable-next-line functional/functional-parameters
 function OffcanvasSidebar() {
     const [isOpen, setIsOpen] =
     useState(false)
@@ -25,6 +26,7 @@ function OffcanvasSidebar() {
             {/* Toggle button */}
             <button
                 className="p-2 text-white"
+                // eslint-disable-next-line functional/functional-parameters
                 onClick={() =>
                     setIsOpen(!isOpen)
                 }
@@ -36,6 +38,7 @@ function OffcanvasSidebar() {
             <Transition show={isOpen}>
                 <button
                     className="fixed inset-0 z-10 w-full h-full bg-black opacity-50 cursor-default"
+                    // eslint-disable-next-line functional/functional-parameters
                     onClick={() =>
                         setIsOpen(false)
                     }

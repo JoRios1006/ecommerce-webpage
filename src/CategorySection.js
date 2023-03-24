@@ -5,9 +5,10 @@ import {
     FireIcon,
     ComputerDesktopIcon,
 } from "@heroicons/react/24/outline"
-import { LittleComponent } from "./LittleComponent"
+import LittleComponent from "./LittleComponent"
 
 // Televisores  Celulares  Calefacción  Lavado  Heladeras y freezers  Notebooks
+// eslint-disable-next-line functional/functional-parameters
 const CategorySection = () => {
     const categories = [
         [

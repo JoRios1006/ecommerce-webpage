@@ -1,6 +1,7 @@
 import React from "react"
 import ProductCarousel from "./ProductCarousel"
 
+// eslint-disable-next-line functional/functional-parameters
 const ProductosSection = () => {
     return (
         <div className="py-12 bg-white">

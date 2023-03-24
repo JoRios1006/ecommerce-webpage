@@ -1,6 +1,7 @@
 import React from "react"
 import CustomLinkElement from "./CustomLinkElement"
 
+// eslint-disable-next-line functional/functional-parameters
 const FooterSection = () => {
     return (
         <footer className="bg-white">

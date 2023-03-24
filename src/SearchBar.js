@@ -2,12 +2,14 @@ import React from "react"
 import { useState } from "react"
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid"
 
+// eslint-disable-next-line functional/functional-parameters
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] =
     useState("")
     const handleSearchChange = (
         event,
     ) => {
+        // eslint-disable-next-line functional/no-expression-statements
         setSearchTerm(event.target.value)
     }
 

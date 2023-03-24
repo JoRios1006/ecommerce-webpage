@@ -5,6 +5,7 @@ import OffcanvasSidebar from "./OffcanvasSidebar"
 import TabMenu from "./TabMenu"
 import { useState } from "react"
 
+// eslint-disable-next-line functional/functional-parameters
 const Navbar = () => {
     const CustomLinkStyle =
     "text-white hover:underline decoration-red-400 decoration-4 "
@@ -40,6 +41,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             className="text-white hover:underline decoration-red-400 decoration-4 "
+                            // eslint-disable-next-line functional/functional-parameters
                             onClick={() =>
                                 setIsOpen(!isOpen)
                             }

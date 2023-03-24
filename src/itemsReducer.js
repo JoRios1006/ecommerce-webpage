@@ -10,9 +10,5 @@ export default function itemsReducer(
             ([id]) =>
                 id !== action.itemId,
         )
-    default:
-        throw new Error(
-            `Unsupported action type: ${action.type}`,
-        )
     }
 }

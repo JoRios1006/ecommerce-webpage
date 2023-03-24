@@ -1,5 +1,6 @@
 import React from "react"
 
+// eslint-disable-next-line functional/functional-parameters
 const NewsletterSection = () => {
     return (
         <div className="bg-red-50">
