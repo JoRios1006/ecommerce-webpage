@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 // Cocción  Refrigeración  Equipamiento Comercial  Hogar  Panadería
 /* 
 Cocción
@@ -49,142 +49,143 @@ Panadería
   Heladeras Exhibidoras  
 */
 const tabs = [
-  [
-    "Cocción",
-    <div>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+    [
+        "Cocción",
+        <div key={1}>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Cocinas
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Cocinas Semi Industrial
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Cocinas Industriales
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Cocinas Eléctricas
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Hornos
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Pizzeros
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Pasteleros
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Eléctricos
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Convectores
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Purificadores y Extractores de aire
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+        Purificadores y Extractores
+        de aire
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Campanas
-      </h2>
-    </div>,
-  ],
-  [
-    "Refrigeración",
-    <div>
-      <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
+            </h2>
+        </div>,
+    ],
+    [
+        "Refrigeración",
+        <div key={2}>
+            <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
         Heladera Exhibidoras
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4  ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4  ">
         Exhibidoras Verticales
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
         Freezers
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4  ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4  ">
         Horizontal
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4  ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4  ">
         Vertical
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
         Heladeras
-      </h1>
-    </div>,
-  ],
-  [
-    "Equip. Comercial",
-    <div>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+        </div>,
+    ],
+    [
+        "Equip. Comercial",
+        <div key={3}>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Balanzas Electrónicas
-      </h1>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Licuadora Industrial
-      </h1>
-    </div>,
-  ],
-  [
-    "Hogar",
-    <div>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+        </div>,
+    ],
+    [
+        "Hogar",
+        <div key={4}>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Electrodomésticos
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Balanza Digital
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Sandwicheras
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Microondas
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Pavas Electricas
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Licuadoras
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Batidoras
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Televisores
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Smart TV
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Termotanques
-      </h1>
-    </div>,
-  ],
-  [
-    "Panadería",
-    <div>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+        </div>,
+    ],
+    [
+        "Panadería",
+        <div key={5}>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Sobadora
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Manual
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Amasadora
-      </h1>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Batidoras
-      </h1>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h1>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Hornos
-      </h1>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h1>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Pasteleros
-      </h2>
-      <h2 className="hover:underline decoration-red-200 decoration-4 ">
+            </h2>
+            <h2 className="hover:underline decoration-red-200 decoration-4 ">
         Hornos Convectores
-      </h2>
-      <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
+            </h2>
+            <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
         Heladeras Exhibidoras
-      </h1>
-    </div>,
-  ],
-];
+            </h1>
+        </div>,
+    ],
+]
 
-export default tabs;
+export default tabs

@@ -1,23 +1,23 @@
-import React from "react";
-import ContactInfo from "./ContactInfo";
-import Navbar from "./Navbar";
-import Carousel from "./Carousel";
-import CategorySection from "./CategorySection";
-import ProductosSection from "./ProductosSection";
-import NewsletterSection from "./NewsletterSection";
-import FooterSection from "./FooterSection";
+import React from "react"
+import ContactInfo from "./ContactInfo"
+import Navbar from "./Navbar"
+import Carousel from "./Carousel"
+import CategorySection from "./CategorySection"
+import ProductosSection from "./ProductosSection"
+import NewsletterSection from "./NewsletterSection"
+import FooterSection from "./FooterSection"
 
 const Home = () => {
-  return (
-    <div className="bg-red-100">
-      <ContactInfo />
-      <Navbar />
-      <Carousel />
-      <CategorySection />
-      <ProductosSection />
-      <NewsletterSection />
-      <FooterSection />
-    </div>
-  );
-};
-export default Home;
+    return (
+        <div className="bg-red-100">
+            <ContactInfo />
+            <Navbar />
+            <Carousel />
+            <CategorySection />
+            <ProductosSection />
+            <NewsletterSection />
+            <FooterSection />
+        </div>
+    )
+}
+export default Home
