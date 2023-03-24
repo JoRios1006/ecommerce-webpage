@@ -1,0 +1,88 @@
+const products = [
+  [
+    "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+  [
+    "https://images.pexels.com/photos/1813502/pexels-photo-1813502.jpeg",
+    "Nombre del producto",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "99.00",
+    true,
+  ],
+];
+
+export default products;
