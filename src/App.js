@@ -8,8 +8,8 @@ import {
     Route,
     Routes,
 } from "react-router-dom"
-import About  from "./About"
-import  Home from "./Home"
+import About from "./About"
+import Home from "./Home"
 
 // eslint-disable-next-line functional/functional-parameters
 function App() {
@@ -19,11 +19,15 @@ function App() {
                 <Route
                     path="/"
                     exact
-                    element={<Home />}
+                    element={
+                        <Home />
+                    }
                 />
                 <Route
                     path="/about"
-                    element={<About />}
+                    element={
+                        <About />
+                    }
                 />
             </Routes>
         </Router>

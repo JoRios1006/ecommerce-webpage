@@ -4,11 +4,15 @@ export default function itemsReducer(
 ) {
     switch (action.type) {
     case "add":
-        return [...state, action.item]
+        return [
+            ...state,
+            action.item,
+        ]
     case "remove":
         return state.filter(
             ([id]) =>
-                id !== action.itemId,
+                id !==
+                    action.itemId,
         )
     }
 }

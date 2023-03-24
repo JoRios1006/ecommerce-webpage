@@ -2,32 +2,45 @@
 import React from "react"
 import { Transition } from "@headlessui/react"
 import { useState } from "react"
-import tabs  from "./tabs"
+import tabs from "./tabs"
 
 const TabMenu = () => {
     const [activeTab, setActiveTab] =
-    useState(null)
+        useState(null)
     return (
         <div className="px-20 flex justify-center">
             <div className="relative flex w-full">
                 {tabs.map(
-                    ([title, content], id) => (
+                    (
+                        [
+                            title,
+                            content,
+                        ],
+                        id,
+                    ) => (
                         <div
                             key={id}
                             className="inline-block mr-2 w-full"
                             onMouseEnter={() =>
-                                setActiveTab(id)
+                                setActiveTab(
+                                    id,
+                                )
                             }
                             onMouseLeave={() =>
-                                setActiveTab(null)
+                                setActiveTab(
+                                    null,
+                                )
                             }
                         >
                             <button className="text-white py-2 px-4 text-lg font-black">
-                                {title}
+                                {
+                                    title
+                                }
                             </button>
                             <Transition
                                 show={
-                                    activeTab === id
+                                    activeTab ===
+                                    id
                                 }
                                 enter="transition-opacity duration-75"
                                 enterFrom="opacity-0"
@@ -38,7 +51,9 @@ const TabMenu = () => {
                             >
                                 <div className="absolute z-10 top-full left-0 w-full p-2 bg-red-600 text-white shadow-lg">
                                     <div>
-                                        {content}
+                                        {
+                                            content
+                                        }
                                     </div>
                                 </div>
                             </Transition>

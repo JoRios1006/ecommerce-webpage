@@ -53,38 +53,39 @@ const tabs = [
         "Cocción",
         <div key={1}>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Cocinas
+                Cocinas
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Cocinas Semi Industrial
+                Cocinas Semi
+                Industrial
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Cocinas Industriales
+                Cocinas Industriales
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Cocinas Eléctricas
+                Cocinas Eléctricas
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Hornos
+                Hornos
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Pizzeros
+                Hornos Pizzeros
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Pasteleros
+                Hornos Pasteleros
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Eléctricos
+                Hornos Eléctricos
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Convectores
+                Hornos Convectores
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Purificadores y Extractores
-        de aire
+                Purificadores y
+                Extractores de aire
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Campanas
+                Campanas
             </h2>
         </div>,
     ],
@@ -92,22 +93,23 @@ const tabs = [
         "Refrigeración",
         <div key={2}>
             <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
-        Heladera Exhibidoras
+                Heladera Exhibidoras
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4  ">
-        Exhibidoras Verticales
+                Exhibidoras
+                Verticales
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
-        Freezers
+                Freezers
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4  ">
-        Horizontal
+                Horizontal
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4  ">
-        Vertical
+                Vertical
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4  font-bold text-lg">
-        Heladeras
+                Heladeras
             </h1>
         </div>,
     ],
@@ -115,10 +117,10 @@ const tabs = [
         "Equip. Comercial",
         <div key={3}>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Balanzas Electrónicas
+                Balanzas Electrónicas
             </h1>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Licuadora Industrial
+                Licuadora Industrial
             </h1>
         </div>,
     ],
@@ -126,34 +128,34 @@ const tabs = [
         "Hogar",
         <div key={4}>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Electrodomésticos
+                Electrodomésticos
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Balanza Digital
+                Balanza Digital
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Sandwicheras
+                Sandwicheras
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Microondas
+                Microondas
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Pavas Electricas
+                Pavas Electricas
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Licuadoras
+                Licuadoras
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Batidoras
+                Batidoras
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Televisores
+                Televisores
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Smart TV
+                Smart TV
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Termotanques
+                Termotanques
             </h1>
         </div>,
     ],
@@ -161,28 +163,28 @@ const tabs = [
         "Panadería",
         <div key={5}>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Sobadora
+                Sobadora
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Manual
+                Manual
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Amasadora
+                Amasadora
             </h1>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Batidoras
+                Batidoras
             </h1>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Hornos
+                Hornos
             </h1>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Pasteleros
+                Hornos Pasteleros
             </h2>
             <h2 className="hover:underline decoration-red-200 decoration-4 ">
-        Hornos Convectores
+                Hornos Convectores
             </h2>
             <h1 className="hover:underline decoration-red-200 decoration-4 font-bold text-lg">
-        Heladeras Exhibidoras
+                Heladeras Exhibidoras
             </h1>
         </div>,
     ],

@@ -12,19 +12,31 @@ import LittleComponent from "./LittleComponent"
 const CategorySection = () => {
     const categories = [
         [
-            <TvIcon key={1} className="h-20 w-20 text-white" />,
+            <TvIcon
+                key={1}
+                className="h-20 w-20 text-white"
+            />,
             "Televisores",
         ],
         [
-            <DevicePhoneMobileIcon key={2} className="h-20 w-20 text-white" />,
+            <DevicePhoneMobileIcon
+                key={2}
+                className="h-20 w-20 text-white"
+            />,
             "Celulares",
         ],
         [
-            <FireIcon key={3} className="h-20 w-20 text-white" />,
+            <FireIcon
+                key={3}
+                className="h-20 w-20 text-white"
+            />,
             "Calefacción",
         ],
         [
-            <ComputerDesktopIcon key={4} className="h-20 w-20 text-white" />,
+            <ComputerDesktopIcon
+                key={4}
+                className="h-20 w-20 text-white"
+            />,
             "Notebooks",
         ],
     ]
@@ -32,11 +44,18 @@ const CategorySection = () => {
     return (
         <div className="flex justify-around py-4">
             {categories.map(
-                (category, index) => (
+                (
+                    category,
+                    index,
+                ) => (
                     <LittleComponent
                         key={index}
-                        icon={category[0]}
-                        text={category[1]}
+                        icon={
+                            category[0]
+                        }
+                        text={
+                            category[1]
+                        }
                     />
                 ),
             )}

@@ -7,15 +7,20 @@ const NewsletterSection = () => {
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-extrabold text-gray-900">
-            Suscríbete a nuestro
-            boletín!
+                        Suscríbete a
+                        nuestro
+                        boletín!
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-            Lorem ipsum dolor sit
-            amet, consect adipiscing
-            elit. Nullam id feugiat
-            turpis, eget pulvinar
-            neque.
+                        Lorem ipsum
+                        dolor sit
+                        amet, consect
+                        adipiscing
+                        elit. Nullam
+                        id feugiat
+                        turpis, eget
+                        pulvinar
+                        neque.
                     </p>
                     <form
                         action="#"
@@ -26,7 +31,8 @@ const NewsletterSection = () => {
                             htmlFor="emailAddress"
                             className="sr-only"
                         >
-              Email address
+                            Email
+                            address
                         </label>
                         <input
                             type="email"
@@ -42,7 +48,7 @@ const NewsletterSection = () => {
                             type="submit"
                             className="mt-3 w-full px-5 py-3 border border-transparent shadow text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
                         >
-              Suscribase
+                            Suscribase
                         </button>
                     </form>
                 </div>

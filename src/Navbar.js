@@ -8,18 +8,20 @@ import { useState } from "react"
 // eslint-disable-next-line functional/functional-parameters
 const Navbar = () => {
     const CustomLinkStyle =
-    "text-white hover:underline decoration-red-400 decoration-4 "
+        "text-white hover:underline decoration-red-400 decoration-4 "
     const SimpleCustomLink =
-    StyledCustomLink(CustomLinkStyle)
+        StyledCustomLink(
+            CustomLinkStyle,
+        )
     const [isOpen, setIsOpen] =
-    useState(false)
+        useState(false)
     return (
         <nav className="bg-red-600 py-3">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <div className="bg-black px-4 flex justify-center -skew-x-12 ">
                         <span className="text-white text-center text-5xl font-black">
-              CREDIMISION
+                            CREDIMISION
                         </span>
                     </div>
                     <SearchBar />
@@ -27,12 +29,12 @@ const Navbar = () => {
                         <ul className="flex space-x-4">
                             <li>
                                 <SimpleCustomLink href="#">
-                  Promociones
+                                    Promociones
                                 </SimpleCustomLink>
                             </li>
                             <li>
                                 <SimpleCustomLink href="#">
-                  Categorías
+                                    Categorías
                                 </SimpleCustomLink>
                             </li>
                         </ul>
@@ -43,7 +45,9 @@ const Navbar = () => {
                             className="text-white hover:underline decoration-red-400 decoration-4 "
                             // eslint-disable-next-line functional/functional-parameters
                             onClick={() =>
-                                setIsOpen(!isOpen)
+                                setIsOpen(
+                                    !isOpen,
+                                )
                             }
                         >
                             <svg
@@ -69,16 +73,16 @@ const Navbar = () => {
                 >
                     <ul className="mt-4 space-y-4">
                         <SimpleCustomLink href="#">
-              Volver
+                            Volver
                         </SimpleCustomLink>
                         <SimpleCustomLink href="#">
-              Características
+                            Características
                         </SimpleCustomLink>
                         <SimpleCustomLink href="#">
-              Pricing
+                            Pricing
                         </SimpleCustomLink>
                         <SimpleCustomLink href="#">
-              Contáctanos!
+                            Contáctanos!
                         </SimpleCustomLink>
                     </ul>
                 </div>

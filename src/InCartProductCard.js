@@ -20,7 +20,7 @@ const InCartProductCard = ({
                 </h3>
                 <div className="mt-2">
                     <span className="text-gray-900 text-sm font-medium">
-            ${price}
+                        ${price}
                     </span>
                 </div>
             </div>

@@ -7,13 +7,13 @@ import {
     ShoppingCartIcon,
     XMarkIcon,
 } from "@heroicons/react/24/solid"
-import InCartProductCard  from "./InCartProductCard"
-import  products  from "./data"
+import InCartProductCard from "./InCartProductCard"
+import products from "./data"
 
 // eslint-disable-next-line functional/functional-parameters
 function OffcanvasSidebar() {
     const [isOpen, setIsOpen] =
-    useState(false)
+        useState(false)
     const [
         productImageCustomLink,
         productaName,
@@ -28,19 +28,25 @@ function OffcanvasSidebar() {
                 className="p-2 text-white"
                 // eslint-disable-next-line functional/functional-parameters
                 onClick={() =>
-                    setIsOpen(!isOpen)
+                    setIsOpen(
+                        !isOpen,
+                    )
                 }
             >
                 <ShoppingCartIcon className="w-6 h-6" />
             </button>
 
             {/* Offcanvas sidebar */}
-            <Transition show={isOpen}>
+            <Transition
+                show={isOpen}
+            >
                 <button
                     className="fixed inset-0 z-10 w-full h-full bg-black opacity-50 cursor-default"
                     // eslint-disable-next-line functional/functional-parameters
                     onClick={() =>
-                        setIsOpen(false)
+                        setIsOpen(
+                            false,
+                        )
                     }
                 >
                     <XMarkIcon className="absolute top-0 left-0 z-10 w-8 h-8 m-4 text-white bg-red-500 p-2 rounded-full font-black" />

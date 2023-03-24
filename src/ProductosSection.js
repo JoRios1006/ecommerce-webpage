@@ -8,7 +8,8 @@ const ProductosSection = () => {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
                 <div className="lg:text-center">
                     <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Ofertas Hasta 35% OFF!
+                        Ofertas Hasta
+                        35% OFF!
                     </h2>
                 </div>
                 <ProductCarousel />
@@ -16,7 +17,8 @@ const ProductosSection = () => {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
                 <div className="lg:text-center">
                     <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Ofertas Hasta 35% OFF!
+                        Ofertas Hasta
+                        35% OFF!
                     </h2>
                 </div>
                 <ProductCarousel />
@@ -24,7 +26,8 @@ const ProductosSection = () => {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
                 <div className="lg:text-center">
                     <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Ofertas Hasta 35% OFF!
+                        Ofertas Hasta
+                        35% OFF!
                     </h2>
                 </div>
                 <ProductCarousel />
@@ -32,7 +35,8 @@ const ProductosSection = () => {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
                 <div className="lg:text-center">
                     <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Ofertas Hasta 35% OFF!
+                        Ofertas Hasta
+                        35% OFF!
                     </h2>
                 </div>
                 <ProductCarousel />
@@ -40,7 +44,8 @@ const ProductosSection = () => {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-12">
                 <div className="lg:text-center">
                     <h2 className="text-base text-gray-600 font-semibold tracking-wide uppercase">
-            Ofertas Hasta 35% OFF!
+                        Ofertas Hasta
+                        35% OFF!
                     </h2>
                 </div>
                 <ProductCarousel />
